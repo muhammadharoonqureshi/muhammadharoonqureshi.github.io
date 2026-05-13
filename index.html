@@ -130,7 +130,7 @@ line=launch(x,y,1)
 plt.show()
 
 # Problem 1
-'''
+
 def full_line(Charges,number,ra=1,RK2=False,dt=0.1,color="b"):
     deltheta=360/number        
     thetadeg=22.5
@@ -154,7 +154,7 @@ plt.show()
 # However, as we decreased the step size, the difference in error between second order Runge Kutta
 # and the Euler method became less noticable. The Runge Kutta method did also seem to take very slightly longer.
 # These results are within our expectations as per the formula error that was derived for high order terms in this Unit. 
-'''
+
 #Problem 2
 def full_line(Charges,number,ra=1,RK2=False,dt=0.1,color="b"):
     deltheta=360/number
@@ -166,7 +166,7 @@ def full_line(Charges,number,ra=1,RK2=False,dt=0.1,color="b"):
             y=i.y+ra*np.sin(theta)
             launch(x,y,ra,RK2,dt,color)
             thetadeg+=deltheta
-'''
+
 Charges=[Charge(0,0,1)]
 full_line(Charges, 8, 1, True, 0.5,"black")
 plt.show()
@@ -179,7 +179,7 @@ Charges=[Charge(-7,0,1), Charge(7,0,1),  Charge(0,-7,-1)]
 full_line(Charges, 8, 1, True, 0.5,"black")
 plt.show()
 # Problem 3
-'''
+
 def Equipotential(x,y,ra=1,RK2=False,dt=0.1,color="b"):
     X=x
     Y=y
